@@ -40,7 +40,7 @@ export default function Navbar({ scrolled, onOpenModal }: NavbarProps) {
       }`}
     >
       <div
-        className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between transition-all duration-500 ${scrolled || isMenuOpen ? "py-4" : "py-6"}`}
+        className={`max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between transition-all duration-500 ${scrolled || isMenuOpen ? "py-4" : "py-6"}`}
       >
         <Link
           to="/"

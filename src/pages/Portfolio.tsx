@@ -15,7 +15,7 @@ export default function PortfolioSection() {
 
   return (
     <section id="portfolio" className="pt-32 pb-24 bg-white dark:bg-slate-950 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-brand-600 dark:text-brand-400 font-bold text-sm uppercase tracking-widest mb-3">Nosso Portfólio</h2>
           <h3 className="text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
