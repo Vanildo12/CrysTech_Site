@@ -114,7 +114,7 @@ export const portfolioProjects: Project[] = [
     category: "web",
     problem: "O cliente tinha um site lento que não suportava picos de tráfego durante promoções, resultando em perda de vendas e abandono de carrinho.",
     solution: "Desenvolvemos uma nova plataforma utilizando React e infraestrutura em nuvem escalável, com foco em carregamento progressivo e checkout simplificado.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1539278383962-a7774385fa02?auto=format&fit=crop&q=80&w=800",
     results: [
       "Aumento de 45% na taxa de conversão",
       "Redução de 70% no tempo de carregamento",
@@ -127,7 +127,7 @@ export const portfolioProjects: Project[] = [
     category: "app",
     problem: "Dependência excessiva de marketplaces terceiros com taxas altas e falta de controle sobre a experiência do cliente final.",
     solution: "Criação de um aplicativo próprio com sistema de fidelidade integrado, rastreamento em tempo real e painel administrativo intuitivo.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1601972602237-8c79241e468b?auto=format&fit=crop&q=80&w=800",
     results: [
       "Economia de 25% em taxas de marketplaces",
       "Crescimento de 30% na base de clientes recorrentes",
@@ -140,7 +140,7 @@ export const portfolioProjects: Project[] = [
     category: "network",
     problem: "Sinal de Wi-Fi instável e falhas frequentes na rede cabeada, prejudicando a produtividade de mais de 50 empresas residentes.",
     solution: "Redesenho total da topologia de rede, instalação de equipamentos Wi-Fi 6 de nível empresarial e implementação de firewall avançado.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=800",
     results: [
       "Zero quedas de conexão registradas em 6 meses",
       "Velocidade de rede 5x superior à anterior",
