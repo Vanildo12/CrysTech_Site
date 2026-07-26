@@ -14,7 +14,7 @@ export default function About({ onOpenModal }: AboutProps) {
         id="about"
         className="pt-32 pb-12 overflow-hidden bg-white dark:bg-slate-950"
       >
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export default function About({ onOpenModal }: AboutProps) {
 
       {/* História da Empresa */}
       <section className="pt-12 pb-24 bg-slate-50 dark:bg-slate-900 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -167,7 +167,7 @@ export default function About({ onOpenModal }: AboutProps) {
 
       {/* Missão, Visão e Valores */}
       <section className="py-24 bg-white dark:bg-slate-950">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -240,7 +240,7 @@ export default function About({ onOpenModal }: AboutProps) {
 
       {/* Equipa */}
       <section className="py-24 bg-slate-900 dark:bg-slate-950 text-white overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
             <h2 className="text-brand-400 font-bold text-sm uppercase tracking-widest mb-3">
               Nossos Especialistas
@@ -297,7 +297,7 @@ export default function About({ onOpenModal }: AboutProps) {
 
       {/* Diferenciais */}
       <section className="py-24 bg-slate-50 dark:bg-slate-900">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-600 dark:text-brand-400 font-bold text-sm uppercase tracking-widest mb-3">
               Diferenciais
@@ -363,7 +363,7 @@ export default function About({ onOpenModal }: AboutProps) {
 
       {/* Números / Conquistas */}
       <section className="py-20 bg-brand-600 text-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { label: "Anos de Experiência", value: "5+" },
@@ -386,7 +386,7 @@ export default function About({ onOpenModal }: AboutProps) {
 
       {/* Histórias de Sucesso */}
       <section className="py-24 bg-white dark:bg-slate-950">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-brand-600 dark:text-brand-400 font-bold text-sm uppercase tracking-widest mb-3">
               Impacto Real
@@ -455,7 +455,7 @@ export default function About({ onOpenModal }: AboutProps) {
       </section>
 
       <section className="py-24 bg-brand-600 text-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-4xl font-display font-bold mb-4">
             Pronto para escrever o próximo capítulo da sua empresa?
           </h3>

@@ -38,7 +38,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
       id="contact"
       className="bg-white dark:bg-slate-950 pt-20 pb-10 border-t border-slate-100 dark:border-slate-800"
     >
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Newsletter Section */}
         <div className="mb-20 p-8 md:p-12 bg-slate-900 dark:bg-slate-900 rounded-[2.5rem] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-600/20 blur-[100px] rounded-full -mr-32 -mt-32"></div>

@@ -51,7 +51,7 @@ export default function Home({ onOpenModal }: HomeProps) {
       
       {/* Featured Statistics Section */}
       <section className="py-20 bg-white dark:bg-slate-950">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { label: "Projetos Entregues", value: "10+", icon: <Zap className="w-6 h-6 text-brand-600 dark:text-brand-400" /> },
@@ -78,7 +78,7 @@ export default function Home({ onOpenModal }: HomeProps) {
 
       {/* Diferenciais Section */}
       <section className="py-24 bg-slate-50 dark:bg-slate-900 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-600 dark:text-brand-400 font-bold text-sm uppercase tracking-widest mb-3">Diferenciais</h2>
             <h3 className="text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
@@ -117,7 +117,7 @@ export default function Home({ onOpenModal }: HomeProps) {
 
       {/* FAQ Section */}
       <section className="py-24 bg-white dark:bg-slate-950">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-600 dark:text-brand-400 font-bold text-sm uppercase tracking-widest mb-3">FAQ</h2>
             <h3 className="text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
@@ -150,7 +150,7 @@ export default function Home({ onOpenModal }: HomeProps) {
 
       {/* Testimonials Section */}
       <section className="py-24 bg-slate-50 dark:bg-slate-900" aria-labelledby="testimonials-title">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-brand-600 dark:text-brand-400 font-bold text-sm uppercase tracking-widest mb-3">Testemunhos</h2>
             <h3 id="testimonials-title" className="text-4xl font-display font-bold text-slate-900 dark:text-white">O que nossos clientes dizem</h3>

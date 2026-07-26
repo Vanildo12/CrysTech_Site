@@ -12,7 +12,7 @@ export default function Services({ onOpenModal }: ServicesProps) {
     <>
       {/* Hero / Cabeçalho */}
       <section id="services-hero" className="pt-32 pb-24 bg-white dark:bg-slate-950 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export default function Services({ onOpenModal }: ServicesProps) {
 
       {/* Lista de Serviços */}
       <section className="py-32 bg-slate-50 dark:bg-slate-900">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -97,7 +97,7 @@ export default function Services({ onOpenModal }: ServicesProps) {
 
       {/* Processo de Atendimento */}
       <section className="py-32 bg-white dark:bg-slate-950 overflow-hidden text-center">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-brand-600 dark:text-brand-400 font-bold text-sm uppercase tracking-widest mb-3">Metodologia</h2>
             <h3 className="text-4xl font-display font-bold text-slate-900 dark:text-white">Como Trabalhamos</h3>
@@ -133,7 +133,7 @@ export default function Services({ onOpenModal }: ServicesProps) {
 
       {/* Porque Escolher-nos */}
       <section className="py-32 bg-brand-600 text-white overflow-hidden text-center">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -206,7 +206,7 @@ export default function Services({ onOpenModal }: ServicesProps) {
       {/* CTA Final */}
       <section className="py-24 bg-brand-600 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
