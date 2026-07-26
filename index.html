@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CrysTech Solutions | Consultoria e Soluções em TI</title>
+    <meta name="description" content="Especialistas em desenvolvimento web, aplicativos, infraestrutura de redes e assistência técnica. Transforme sua empresa com a CrysTech Solutions." />
+    <meta name="keywords" content="TI, Consultoria, Desenvolvimento Web, Redes, Suporte Técnico, Brasil, São Paulo" />
+    <meta name="author" content="CrysTech Solutions" />
+    <meta property="og:title" content="CrysTech Solutions | Excelência Tecnológica" />
+    <meta property="og:description" content="Soluções completas em TI para o seu negócio crescer sem limites." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (theme === 'dark' || (!theme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {
+          console.error('Theme initialization failed:', e);
+        }
+      })();
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
+
