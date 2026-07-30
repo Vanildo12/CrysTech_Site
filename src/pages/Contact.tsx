@@ -80,23 +80,32 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
 
     setIsSubmitting(true);
 
-    // Simulate API call delay
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setErrors({});
+      if (!res.ok) throw new Error(`Request failed with status ${res.status}`);
 
-    // Optional: Hide success message after 8 seconds
-    setTimeout(() => setIsSuccess(false), 8000);
+      setIsSuccess(true);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      setErrors({});
+      setTimeout(() => setIsSuccess(false), 8000);
+    } catch (error) {
+      console.error("Contact form error:", error);
+      setErrors({ message: "Não foi possível enviar sua mensagem. Tente novamente ou use o WhatsApp." });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
