@@ -22,13 +22,13 @@ export const socialLinks = [
   },
   {
     icon: <FaEnvelope size={20} />,
-    href: "mailto:contato@crystechsolutions.com",
+    href: "mailto:geral@crystechsolutions.com",
     label: "Email",
   },
 ];
 
 export const contactInfo = {
-  email: "contato@crystechsolutions.com",
+  email: "geral@crystechsolutions.com",
   phone: "(258) 87866-8672",
   address: "Av. Correia de Britos, Cidade da Beira, Moçambique"
 };

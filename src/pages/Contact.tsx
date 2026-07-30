@@ -164,7 +164,7 @@ export default function Contact() {
                       E-mail
                     </h4>
                     <p className="text-slate-600 dark:text-slate-400 text-xs">
-                      contato@crystechsolutions.com
+                      geral@crystechsolutions.com
                     </p>
                   </div>
                 </div>

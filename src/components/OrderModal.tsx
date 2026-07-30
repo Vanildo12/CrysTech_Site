@@ -77,7 +77,7 @@ export default function OrderModal({ isOpen, onClose, initialService }: OrderMod
     logEvent("Conversion", "Submit Order Form", formData.service);
     
     const companyPhone = "258878668672";
-    const companyEmail = "contato@crystechsolutions.com";
+    const companyEmail = "geral@crystechsolutions.com";
     
     const text = `*Novo Pedido - CrysTech Solutions*\n\n*Nome:* ${formData.name}\n*Serviço:* ${formData.service}\n*Telefone:* ${formData.phone}\n*Email:* ${formData.email}\n*Mensagem:* ${formData.message}`;
     
