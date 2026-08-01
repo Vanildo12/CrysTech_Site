@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { MapPin, Phone, Mail, Clock, Send,  Plus, Minus, ChevronRight, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send,  Plus, Minus, ChevronRight, CheckCircle2, AlertCircle } from "lucide-react";
 import { socialLinks } from "../constants";
 import React, { useState } from "react";
 
@@ -39,7 +39,6 @@ export default function Contact() {
     subject: "",
     message: ""
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
 
@@ -78,34 +77,21 @@ export default function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validateForm()) {
       return;
     }
 
-    setIsSubmitting(true);
+    const subject = encodeURIComponent(`[Contato do site] ${formData.subject}`);
+    const body = encodeURIComponent(`Nome: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`);
+    window.location.href = `mailto:geral@crystechsolutions.com?subject=${subject}&body=${body}`;
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (!res.ok) throw new Error(`Request failed with status ${res.status}`);
-
-      setIsSuccess(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setErrors({});
-      setTimeout(() => setIsSuccess(false), 8000);
-    } catch (error) {
-      console.error("Contact form error:", error);
-      setErrors({ message: "Não foi possível enviar sua mensagem. Tente novamente ou use o WhatsApp." });
-    } finally {
-      setIsSubmitting(false);
-    }
+    setIsSuccess(true);
+    setFormData({ name: "", email: "", subject: "", message: "" });
+    setErrors({});
+    setTimeout(() => setIsSuccess(false), 8000);
   };
 
   return (
@@ -262,7 +248,6 @@ export default function Contact() {
                     <div className="relative">
                       <input
                         type="text"
-                        disabled={isSubmitting}
                         className={`w-full px-5 py-4 rounded-2xl border transition-all bg-slate-50 dark:bg-slate-900 dark:text-white focus:bg-white dark:focus:bg-slate-800 disabled:opacity-50 outline-hidden focus:ring-2 ${errors.name ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 dark:border-slate-800 focus:ring-brand-500 focus:border-transparent'}`}
                         placeholder="Seu nome"
                         value={formData.name}
@@ -289,7 +274,6 @@ export default function Contact() {
                     <div className="relative">
                       <input
                         type="email"
-                        disabled={isSubmitting}
                         className={`w-full px-5 py-4 rounded-2xl border transition-all bg-slate-50 dark:bg-slate-900 dark:text-white focus:bg-white dark:focus:bg-slate-800 disabled:opacity-50 outline-hidden focus:ring-2 ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 dark:border-slate-800 focus:ring-brand-500 focus:border-transparent'}`}
                         placeholder="Seu e-mail"
                         value={formData.email}
@@ -316,7 +300,6 @@ export default function Contact() {
                     <div className="relative">
                       <input
                         type="text"
-                        disabled={isSubmitting}
                         className={`w-full px-5 py-4 rounded-2xl border transition-all bg-slate-50 dark:bg-slate-900 dark:text-white focus:bg-white dark:focus:bg-slate-800 disabled:opacity-50 outline-hidden focus:ring-2 ${errors.subject ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 dark:border-slate-800 focus:ring-brand-500 focus:border-transparent'}`}
                         placeholder="Como podemos ajudar?"
                         value={formData.subject}
@@ -343,7 +326,6 @@ export default function Contact() {
                     <div className="relative">
                       <textarea
                         rows={6}
-                        disabled={isSubmitting}
                         className={`w-full px-5 py-4 rounded-2xl border transition-all resize-none bg-slate-50 dark:bg-slate-900 dark:text-white focus:bg-white dark:focus:bg-slate-800 disabled:opacity-50 outline-hidden focus:ring-2 ${errors.message ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 dark:border-slate-800 focus:ring-brand-500 focus:border-transparent'}`}
                         placeholder="Descreva seu projeto ou dúvida detalhadamente..."
                         value={formData.message}
@@ -364,18 +346,9 @@ export default function Contact() {
                   </div>
                   <button
                     type="submit"
-                    disabled={isSubmitting}
-                    className="w-full btn-primary py-5 rounded-2xl flex items-center justify-center gap-3 text-lg transition-transform hover:scale-[1.02] active:scale-100 shadow-xl shadow-brand-600/20 disabled:scale-100 disabled:opacity-70 cursor-pointer"
+                    className="w-full btn-primary py-5 rounded-2xl flex items-center justify-center gap-3 text-lg transition-transform hover:scale-[1.02] active:scale-100 shadow-xl shadow-brand-600/20 cursor-pointer"
                   >
-                    {isSubmitting ? (
-                      <>
-                        <Loader2 className="w-5 h-5 animate-spin" /> Enviando...
-                      </>
-                    ) : (
-                      <>
-                        Enviar Mensagem <Send className="w-5 h-5" />
-                      </>
-                    )}
+                    Enviar Mensagem <Send className="w-5 h-5" />
                   </button>
                 </form>
               </>

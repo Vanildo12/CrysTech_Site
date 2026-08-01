@@ -57,6 +57,8 @@ export default defineConfig(({mode}) => {
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       hmr: process.env.DISABLE_HMR !== 'true',
+      // Opens the OS default browser (not VS Code's internal preview) on `npm run dev`.
+      open: true,
     },
   };
 });
