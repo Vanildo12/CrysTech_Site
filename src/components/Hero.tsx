@@ -73,8 +73,8 @@ export default function Hero({ onOpenModal }: HeroProps) {
           >
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white dark:border-slate-800 bg-slate-200 dark:bg-slate-800 aspect-video">
               <img
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=85&w=1200"
-                alt="Technology Team"
+                src="https://images.unsplash.com/photo-1753715613457-63127ec40824?auto=format&fit=crop&q=85&w=1200"
+                alt="Tela de código de desenvolvimento web"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
                 fetchPriority="high"
