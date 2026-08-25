@@ -36,7 +36,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
   return (
     <footer
       id="contact"
-      className="bg-white dark:bg-slate-950 pt-20 pb-10 border-t border-slate-100 dark:border-slate-800"
+      className="bg-white dark:bg-slate-950 pt-20 pb-32 sm:pb-10 border-t border-slate-100 dark:border-slate-800"
     >
       <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Newsletter Section */}

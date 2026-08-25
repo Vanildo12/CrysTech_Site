@@ -29,7 +29,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
               </span>
               Inovação em Tecnologia
             </div>
-            <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 dark:text-white leading-[1.1] mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-slate-900 dark:text-white leading-[1.1] mb-6 wrap-break-word">
               Transformando ideias em <span className="gradient-text">Soluções Digitais</span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-xl leading-relaxed">

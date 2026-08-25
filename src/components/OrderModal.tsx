@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "motion/react";
 import { X, Send, MessageCircle, Mail, AlertCircle } from "lucide-react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { services } from "../constants";
 import { logEvent } from "../lib/analytics";
 
@@ -28,6 +28,13 @@ export default function OrderModal({ isOpen, onClose, initialService }: OrderMod
     method: "whatsapp" as "whatsapp" | "email",
   });
   const [errors, setErrors] = useState<FormErrors>({});
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};

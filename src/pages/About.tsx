@@ -134,7 +134,7 @@ export default function About({ onOpenModal }: AboutProps) {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-4 pt-8">
                   <img
                     src="https://media.licdn.com/dms/image/v2/C4D12AQFiq7EEguP6GQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1595218434921?e=2147483647&v=beta&t=OjVdvF3obN6Vh6FV_4e7SpdPbXJ96akDHFsUsa6wIoc"

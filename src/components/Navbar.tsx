@@ -53,7 +53,7 @@ export default function Navbar({ scrolled, onOpenModal }: NavbarProps) {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden lg:flex items-center gap-10">
           {navLinks.map((link) => {
             const isActive = location.pathname === link.href;
             return (
@@ -99,7 +99,7 @@ export default function Navbar({ scrolled, onOpenModal }: NavbarProps) {
         </div>
 
         {/* Mobile menu toggle button */}
-        <div className="flex items-center gap-3 md:hidden relative z-50">
+        <div className="flex items-center gap-3 lg:hidden relative z-50">
           <button
             onClick={toggleTheme}
             className="p-2.5 rounded-xl bg-slate-100 text-slate-600"
@@ -136,7 +136,7 @@ export default function Navbar({ scrolled, onOpenModal }: NavbarProps) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-slate-100 overflow-hidden"
+            className="lg:hidden bg-white border-b border-slate-100 overflow-hidden"
           >
             <div className="px-6 py-8 space-y-6">
               <div className="space-y-1">
