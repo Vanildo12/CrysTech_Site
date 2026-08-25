@@ -33,7 +33,7 @@ export default function Navbar({ scrolled, onOpenModal }: NavbarProps) {
     <nav
       role="navigation"
       aria-label="Menu Principal"
-      className={`fixed top-0 w-full z-50 transition-all duration-500 bg-white/95 backdrop-blur-xl ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 bg-white ${
         scrolled || isMenuOpen ? "shadow-lg" : "shadow-sm"
       }`}
     >
