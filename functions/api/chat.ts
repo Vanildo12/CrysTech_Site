@@ -62,6 +62,9 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
             { role: "user", parts: [{ text: message }] },
           ],
           systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
+          generationConfig: {
+            thinkingConfig: { thinkingLevel: "LOW" },
+          },
         }),
       }
     );
